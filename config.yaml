@@ -1,0 +1,19 @@
+telegram:
+  bot_token: "YOUR_TELEGRAM_BOT_TOKEN"
+  chat_id: "YOUR_CHAT_ID"
+
+filters:
+  min_liquidity: 10000
+  min_volume_24h: 5000
+  avoid_fake_volume: true
+
+blacklists:
+  coins: []
+  developers: []
+
+apis:
+  pocket_universe_key: "YOUR_POCKET_UNIVERSE_KEY"
+
+trade:
+  enable_bonkbot: true
+  bonkbot_api_key: "YOUR_BONKBOT_KEY"

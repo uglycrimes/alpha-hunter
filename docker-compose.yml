@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  alpha-hunter:
+    build: .
+    container_name: alpha-hunter
+    restart: unless-stopped
+    volumes:
+      - .:/app
+    command: python main.py
