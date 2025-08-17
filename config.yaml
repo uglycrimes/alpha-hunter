@@ -36,5 +36,5 @@ telegram:
 bonkbot:
   enabled: true
   session_file: "bonkbot.session"
-  username: "@BonkBotWorld_Bot"    # username BonkBot или твоего аккаунта
+  username: "@bonkbot_bot"    # username BonkBot или твоего аккаунта
 
