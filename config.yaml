@@ -3,11 +3,11 @@ runtime:
   lookback_minutes: 180
 
 filters:
-  min_liquidity_usd: 5000
-  min_volume_usd_24h: 1000
-  min_fdv_usd: 50000
-  max_fdv_usd: 10000000
-  min_avg_txn_usd: 5
+  min_liquidity: 5000
+  min_volume_24h: 1000
+  min_fdv: 50000
+  max_fdv: 10000000
+  min_avg_txn: 5
 
 blacklists:
   coins: []          # сюда будут добавляться “плохие” монеты
