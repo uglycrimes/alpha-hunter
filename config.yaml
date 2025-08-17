@@ -10,8 +10,8 @@ filters:
   min_avg_txn_usd: 5
 
 blacklists:
-  coin_addresses: []          # сюда будут добавляться “плохие” монеты
-  developer_addresses: []     # сюда будут добавляться разработчики с рог-пул монет
+  coins: []          # сюда будут добавляться “плохие” монеты
+  developers: []     # сюда будут добавляться разработчики с рог-пул монет
 
 pocket_universe:
   enabled: false
