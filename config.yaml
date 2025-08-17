@@ -1,19 +1,40 @@
-telegram:
-  bot_token: "YOUR_TELEGRAM_BOT_TOKEN"
-  chat_id: "YOUR_CHAT_ID"
+runtime:
+  chains: ["solana"]
+  lookback_minutes: 180
 
 filters:
-  min_liquidity: 10000
-  min_volume_24h: 5000
-  avoid_fake_volume: true
+  min_liquidity_usd: 5000
+  min_volume_usd_24h: 1000
+  min_fdv_usd: 50000
+  max_fdv_usd: 10000000
+  min_avg_txn_usd: 5
 
 blacklists:
-  coins: []
-  developers: []
+  coin_addresses: []          # сюда будут добавляться “плохие” монеты
+  developer_addresses: []     # сюда будут добавляться разработчики с рог-пул монет
 
-apis:
-  pocket_universe_key: "YOUR_POCKET_UNIVERSE_KEY"
+pocket_universe:
+  enabled: false
+  url: ""
+  api_key: ""
 
-trade:
-  enable_bonkbot: true
-  bonkbot_api_key: "YOUR_BONKBOT_KEY"
+sources:
+  dexscreener:
+    base_url: "https://api.dexscreener.io/latest/dex"
+  pumpfun:
+    base_url: "https://pump.fun/api"
+
+storage:
+  url: "sqlite:///alpha_hunter.db"
+  echo_sql: false
+
+telegram:
+  enabled: true
+  bot_token: "8259199756:AAFrBeTEIS-H5mmuiFYnlb2M-anuu3_F84s"  # вставь токен своего Telegram-бота
+  chat_id: 7907269451                  # число, полученное через @userinfobot или Telethon
+
+bonkbot:
+  enabled: true
+  session_file: "bonkbot.session"
+  username: "@BonkBotWorld_Bot"    # username BonkBot или твоего аккаунта
+
